@@ -1,0 +1,73 @@
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Runtime data
+.pyc
+*.pid
+*.seed
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE generated files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Temp files
+*.bak
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# Build and release directories
+/build
+/dist
+/out
+/release
+/.nyc_output
+
+# Config files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.localyew
+
+# Package managers
+yarn.lock
+package-lock.json
+
+# Directory used by IDEs
+.idea/
+.vscode/
+
+# Node modules and debug logs
+node_modules/
+npm-debug.log
+
+# Environment config files
+.env
+
+# Debugging
+*.pdb
+*.pyc
+*.pyo
+*.pyd
