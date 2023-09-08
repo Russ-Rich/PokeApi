@@ -1,151 +1,183 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-html, body {
-    height: 100%;     
-}
-
 body {
-
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
+	font-family: "Open Sans", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 100px;
 }
 
-h1  {
-    color: red;
+h1 {
+	color: red;
+	font-size: 55px;
 }
 
-/****** COLORS *****/
+/* COLORS */
 .bg-dark-red {
-    background-color: rgb(153, 0, 0) ;
+	background-color: rgb(153, 0, 0);
 }
-
 .bg-green {
-    background-color: green;
+	background-color: green;
 }
-
 .bg-yellow {
-    background-color: yellow;
+	background-color: yellow;
 }
 
-
-/***** POKEDEX  *****/
+/* POKEDEX */
 .pokedex {
-    height: 570px;
-    width: 500px;
-    border: 3px solid black;
-    
+	height: 570px;
+	width: 500px;
+	max-width: 100%;
+	border: 3px solid black;
 }
 
 .poke-div-main {
-    background: #E71D23;
-    height: 100%;
-    width: 100%;
+	background: #e71d23;
+	height: 100%;
+	width: 100%;
 }
 
 .top-container {
-    height: 50px;
-    border-bottom: 3px solid black;
-
+	height: 50px;
+	border-bottom: 3px solid black;
 }
 
 .poke-screen-container {
-    height: calc(100% - 50px);
+	height: calc(100% - 50px);
+	display: flex;
 }
 
 .poke-screen-main {
-    height: 100%;
-    width: 444px;
-    padding: 25px;
+	height: 100%;
+	width: 444px;
+	padding: 25px;
+	flex-grow: 1;
 }
 
 .poke-div-grey {
-    background: #DEDEDE;
-    border: 3px solid black;
-    box-shadow: inset 0 0 3px 3px rgba(0,0,0,.3);
-    height: 350px;
+	background: #dedede;
+	border: 3px solid black;
+	box-shadow: inset 0 0 3px 3px rgba(0, 0, 0, 0.3);
+	height: 350px;
 }
 
 .poke-div-black {
-    background: black;
-    height: calc(100% - 50px);
-    width: calc(100% - 50px);
-    margin: 25px;
-    padding: 10px;
+	background: black;
+	height: calc(100% - 50px);
+	width: calc(100% - 50px);
+	margin: 25px;
+	padding: 10px;
 }
 
 .poke-screen {
-    border-radius: 15px;
-    height: 100%;
-    padding: 15px;
-    background: wheat;
+	border-radius: 15px;
+	height: 100%;
+	padding: 15px;
+	background: wheat;
 }
 
 .hinge-container {
-    height: 100%;
-    width: 50px;
-    border-left: 3px solid black;
-    background-color: darkred;
-    
+	height: 100%;
+	width: 50px;
+	border-left: 3px solid black;
+	background-color: darkred;
 }
 
-.hinge-top {
-    border-bottom: 3px solid black;
-    
-}
-
+.hinge-top,
 .hinge-bottom {
-    border-top: 3px solid black;
+	border: 3px solid black;
 }
 
 .poke-screen-top {
-    font-size: 25px;
+	font-size: 25px;
 }
 
 .poke-stats {
-    /* background: rgba(255,255,255,.3); */
-    background: rgba(0,0,0,.3);
-    color:white;
+	background: rgba(0, 0, 0, 0.3);
+	color: white;
 }
 
-
-/**** CIRCLES *****/
+/* CIRCLES */
 .blue-circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: radial-gradient(farthest-corner at 10px 10px, white, #369CD4, #369CD4);
-    border: 2px  solid white;
-    box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: radial-gradient(farthest-corner at 10px 10px, white, #369cd4, #369cd4);
+	border: 2px solid white;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .small-circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 1px solid black ;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid black;
 }
 
-/***** BUTTONS *****/
-button:focus { 
-    outline:0 !important;
+/* BUTTONS */
+button:focus {
+	outline: 0 !important;
 }
 
 .poke-btn {
-    height: 75px;
-    width: 75px;
-    background-color: black;
-    border: none;
+	height: 75px;
+	width: 75px;
+	background-color: black;
+	border: none;
 }
 
 .play-button {
-    color: white;
+	color: white;
+}
+.dpad {
+	color: black;
+}
+.search {
+	padding-left: 90px;
+}
+.search-bar {
+	margin-left: 20px;
 }
 
-.dpad  {
-    color: black;
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+	.pokedex {
+		width: 100%;
+		height: auto;
+	}
+	.poke-screen-main {
+		width: 100%;
+		padding: 10px;
+	}
+	h1 {
+		font-size: 35px;
+	}
+	.poke-screen-top {
+		font-size: 20px;
+	}
+	.poke-btn {
+		height: 50px;
+		width: 50px;
+	}
+	.blue-circle {
+		width: 20px;
+		height: 20px;
+	}
+	.small-circle {
+		width: 5px;
+		height: 5px;
+	}
+}
+
+@media (max-width: 400px) {
+	body {
+		margin-top: 50px;
+	}
+	h1 {
+		font-size: 25px;
+	}
+	.poke-screen-top {
+		font-size: 16px;
+	}
 }
