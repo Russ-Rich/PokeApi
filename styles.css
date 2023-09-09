@@ -1,5 +1,5 @@
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: "poopins", sans-serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -121,8 +121,8 @@ button:focus {
 }
 
 .poke-btn {
-	height: 75px;
-	width: 75px;
+	height: 85px;
+	width: 85px;
 	background-color: black;
 	border: none;
 }
@@ -151,14 +151,14 @@ button:focus {
 		padding: 10px;
 	}
 	h1 {
-		font-size: 35px;
+		font-size: 55px;
 	}
 	.poke-screen-top {
 		font-size: 20px;
 	}
 	.poke-btn {
-		height: 50px;
-		width: 50px;
+		height: 80px;
+		width: 80px;
 	}
 	.blue-circle {
 		width: 20px;
